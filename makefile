@@ -76,6 +76,9 @@ rogue.o: rogue.cpp rogue.hpp entity.hpp JsonEntityBuilder.hpp json.hpp
 priest.o: priest.cpp priest.hpp entity.hpp JsonEntityBuilder.hpp json.hpp
 	$(COMPILER) -c -std=c++11 priest.cpp -o priest.o
 
+#dragon.o: dragon.cpp dragon.hpp entity.hpp JsonEntityBuilder.hpp json.hpp
+#	$(Compiler) -c -std=c++11 dragon.cpp -o dragon.o
+
 
 # goblin.o: goblin.cpp goblin.hpp character.hpp inventory.hpp
 # 	g++ -c goblin.cpp
