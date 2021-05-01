@@ -33,7 +33,7 @@ void Dragon::UseAction(Entity * target, const std::string& spellName, const std:
         WeaponAttack(target);
         return;
     }
-    if(spellName == "firebreath")
+    if(spellName == "Firebreath")
     {
         Firebreath(target);
         return;

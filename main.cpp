@@ -13,6 +13,7 @@
 #include "mage.hpp"
 #include "rogue.hpp"
 #include "priest.hpp"
+#include "dragon.hpp"
 
 
 
@@ -103,6 +104,13 @@ int main(int argc, char *argv[])
                 std::stringstream iss(line);
                 iss >> input >> who >> id;
                 encounter.AddEntity(new Monster(builder, inventory, id));
+            }
+            else if(who == 'd')
+            {
+                uint32_t id;
+                std::stringstream iss(line);
+                iss >> input >> who >> id;
+                encounter.AddEntity(new Dragon(builder, inventory, id));
             }
             else
             {
